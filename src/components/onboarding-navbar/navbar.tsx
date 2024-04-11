@@ -5,7 +5,7 @@ import Image from 'next/image';
 
 export function Navbar() {
   return (
-   <nav className=" h-24 flex flex-row items-center">
+   <nav className="fixed z-50 w-full  h-24 flex flex-row items-center bg-">
     <Image
           className="lg:ml-[5%] sm:ml-[1%] md:ml-[1%]"
           src={fitkoIcon}
