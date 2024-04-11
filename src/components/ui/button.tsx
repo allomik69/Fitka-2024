@@ -18,6 +18,7 @@ const buttonVariants = cva(
           "bg-secondary text-secondary-foreground hover:bg-secondary/80",
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
+        onboarding: "animate-shimmer flex flex-row bg-[linear-gradient(110deg,#4338ca,45%,#818cf8,55%,#4338ca)] bg-[length:200%_100%] mt-3 w-40 h-10 rounded-lg justify-around items-center"
       },
       size: {
         default: "h-10 px-4 py-2",
