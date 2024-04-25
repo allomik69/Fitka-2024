@@ -71,14 +71,14 @@ export default function ThankYo() {
 
         </div>
         
-        <div className="absolute bg-white py-16 px-12 mt-56 ml-96  items-center rounded-lg ">
+        <div className="absolute bg-white py-12 px-12 mt-56 ml-96  items-center rounded-lg ">
 
                 
-                <p className="font-extrabold mt-2 text-5xl">
+                <p className="font-semibold mt-2 text-5xl">
                         Ďakujeme! 
                     </p>  
 
-                    <p className="font-medium mt-12 text-1xl">
+                    <p className="font-medium mt-2 text-1xl">
                     Tvoja permanentka skončí: 
                     </p>
 
@@ -86,7 +86,7 @@ export default function ThankYo() {
                         20.3.2024
                     </p>
 
-                    <p className="mt-4">
+                    <p className="mt-2">
                     Na tvoj mail (jozko@gmail.com) sme poslali QR kód ktorým sa jednoducho overíš vo fitku.
                     </p>
         
