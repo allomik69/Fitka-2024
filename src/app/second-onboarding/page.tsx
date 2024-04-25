@@ -21,16 +21,16 @@ export const metadata: Metadata = {
   export default function OnboardingSecond() {
     return (
       <main className=" flex flex-col items-center">
-      <div className="flex-start mt-[5%]">
-      <h2 className="text-3xl font-semibold">Krok 2/3</h2>
-      <h1 className="mt-8 text-5xl  font-semibold">Nový produkt</h1>
-      <h2 className="mt-5 mb-1">Meno</h2>
+      <div className="flex-start mt-[2%] ">
+      <h2 className="text-xl font-semibold">Krok 2/3</h2>
+      <h1 className="mt-5 text-3xl  font-semibold">Nový produkt</h1>
+      <h2 className="mt-5 mb-[3px]">Meno</h2>
      <Input placeholder="Vstup"/> 
-      <h5 className="mt-1  text-base text-slate-500">Zadajte meno Vášho plánu</h5>
-      <h2 className="mt-3 mb-1">Popis</h2>
+      <h5 className="mt-[3px]  text-base text-slate-500">Zadajte meno Vášho plánu</h5>
+      <h2 className="mt-3 mb-[3px]">Popis</h2>
      <Input placeholder="Jednorázový vstup"/> 
-      <h5 className="mt-1  text-base text-slate-500">Zadajte popis Vášho plánu</h5>
-      <h2 className="mt-3 mb-1">Doba platnosti</h2>
+      <h5 className="mt-[3px]  text-base text-slate-500">Zadajte popis Vášho plánu</h5>
+      <h2 className="mt-3 mb-[3px]">Doba platnosti</h2>
       <div className="flex flex-row">
           <Input placeholder="1" type="number" className="w-[12rem] mr-2"/> 
           <Select>
@@ -49,6 +49,10 @@ export const metadata: Metadata = {
      <Input placeholder="zadajte cenu v eurách."/> 
       <h5 className="mt-1  text-base text-slate-500">Zadajte cenu Vášho plánu</h5>
     </div>
+    <Button className=" w-[200px]" variant={"onboarding"}>
+          Pokračovať 
+            <Image src={arrow} width={25} height={25} alt="arrow"/>  
+        </Button>
     </main>
     );
   }
