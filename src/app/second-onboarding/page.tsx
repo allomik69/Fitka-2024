@@ -14,7 +14,7 @@ import {
 } from "@/components/ui/select"
 
 export const metadata: Metadata = {
-    title: "Onboarding",
+    title: "Onboarding 2",
     description: "Welcome to onbarding.",
   };
   
