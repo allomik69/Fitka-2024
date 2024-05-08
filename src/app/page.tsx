@@ -1,22 +1,23 @@
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
-import Image from "next/image";
+import { Button } from "@/components/ui/button";
+import { SignInButton, SignedIn, SignedOut, UserButton } from "@clerk/nextjs";
 
 export default function Home() {
   return (
-    <main className="">
-      <Accordion type="single" collapsible>
-        <AccordionItem value="item-1">
-          <AccordionTrigger>Is it accessible?</AccordionTrigger>
-          <AccordionContent>
-            Yes. It adheres to the WAI-ARIA design pattern.
-          </AccordionContent>
-        </AccordionItem>
-      </Accordion>
+    <main className="flex font-sans flex-col justify-center items-center h-screen">
+      <SignedIn>
+        <h1>Home</h1>
+        <p>Welcome back!</p>
+        <UserButton />
+      </SignedIn>
+      <SignedOut>
+        <h1>Home</h1>
+        <p>Sign in to continue</p>
+        <div className="mt-5">
+          <SignInButton>
+            <Button>Sign in</Button>
+          </SignInButton>
+        </div>
+      </SignedOut>
     </main>
   );
 }
