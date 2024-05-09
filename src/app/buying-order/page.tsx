@@ -1,30 +1,37 @@
 export default function ThankYo() {
-        </g>
-  return (
-      <main className="h-screen relative overflow-hidden flex items-center justify-center">
-          {/* Full-screen Background SVG */}
-          <div className="absolute top-0 left-0 w-full h-full z-0">
-              <svg width="100%" height="100%" viewBox="0 0 890 446" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
-                  <g filter="url(#filter0_f_579_605)">
-                      <ellipse cx="659.5" cy="-428.5" rx="638.5" ry="611.5" fill="url(#paint0_linear_579_605)" />
-                  </g>
-                  <defs>
-                      <filter id="filter0_f_579_605" x="-579" y="-1640" width="2477" height="2423" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                          <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                          <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
-                          <feGaussianBlur stdDeviation="300" result="effect1_foregroundBlur_579_605"/>
-                      </filter>
-                      <linearGradient id="paint0_linear_579_605" x1="420" y1="-344.5" x2="1003.01" y2="-350.925" gradientUnits="userSpaceOnUse">
-                          <stop stop-color="#FE9800"/>
-                          <stop offset="0.0001" stop-color="#F6970A"/>
-                          <stop offset="0.625" stop-color="#8F5FCD"/>
-                          <stop offset="1" stop-color="#E916FB"/>
-                      </linearGradient>
-                  </defs>
-              </svg>
-
-              
-          </div>
+    return (
+        <main className="h-screen relative overflow-hidden flex items-center justify-center">
+            {/* Full-screen Background SVG */}
+            <div className="absolute top-0 left-0 w-full h-full z-0">
+                <svg width="100%" height="100%" viewBox="0 0 890 446" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+                    <g filter="url(#filter0_f_579_605)">
+                        <ellipse cx="659.5" cy="-428.5" rx="638.5" ry="611.5" fill="url(#paint0_linear_579_605)" />
+                    </g>
+                    <defs>
+                        <filter id="filter0_f_579_605" x="-579" y="-1640" width="2477" height="2423" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                            <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+                            <feGaussianBlur stdDeviation="300" result="effect1_foregroundBlur_579_605"/>
+                        </filter>
+                        <linearGradient id="paint0_linear_579_605" x1="420" y1="-344.5" x2="1003.01" y2="-350.925" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#FE9800"/>
+                            <stop offset="0.0001" stop-color="#F6970A"/>
+                            <stop offset="0.625" stop-color="#8F5FCD"/>
+                            <stop offset="1" stop-color="#E916FB"/>
+                        </linearGradient>
+                    </defs>
+                </svg>
+            </div>
+  
+            {/* Div to appear on top */}
+            <div className="absolute z-20 mt-56 ml-56">
+              <p className="font-semibold text-5xl text-center">
+                ZAKÚPTE SI PRODUKT VÁŠHO FITNESS CENTRA                    
+              </p>  
+              <p className="font-regular text-center mt-10">
+                Budte najlepšou verziou samého seba
+              </p>
+            </div>
 
           
 
@@ -103,7 +110,16 @@ export default function ThankYo() {
                         Poďme na to 
                     </button>
                 </div>
+                
+                
             </div>
+
+
+                
+            
+          
+
+  
         </main>
     );
 }
