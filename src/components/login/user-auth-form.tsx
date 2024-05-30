@@ -4,8 +4,6 @@ import { Button } from "@/components/ui/button";
 import { SignedOut } from "@clerk/nextjs";
 import SignInOAuthButtons from "./sign-in-oauth";
 
-interface UserAuthFormProps extends React.HTMLAttributes<HTMLDivElement> {}
-
 export function UserAuthForm({ className, ...props }: UserAuthFormProps) {
   return (
     <div className={cn("grid gap-2", className)} {...props}>
