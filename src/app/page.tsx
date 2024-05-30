@@ -1,23 +1,18 @@
 import { Button } from "@/components/ui/button";
-import { SignInButton, SignedIn, SignedOut, UserButton } from "@clerk/nextjs";
+import { SignedIn, SignedOut, UserButton } from "@clerk/nextjs";
+import Link from "next/link";
 
 export default function Home() {
   return (
     <main className="flex font-sans flex-col justify-center items-center h-screen">
+      <SignedOut>
+        <Button variant={"outline"} className="px-10 py-2 border-primary">
+          <Link href="/login">Login</Link>
+        </Button>
+      </SignedOut>
       <SignedIn>
-        <h1>Home</h1>
-        <p>Welcome back!</p>
         <UserButton />
       </SignedIn>
-      <SignedOut>
-        <h1>Home</h1>
-        <p>Sign in to continue</p>
-        <div className="mt-5">
-          <SignInButton>
-            <Button>Sign in</Button>
-          </SignInButton>
-        </div>
-      </SignedOut>
     </main>
   );
 }

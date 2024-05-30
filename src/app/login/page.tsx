@@ -51,10 +51,9 @@ export default function AuthenticationPage() {
           <div className="relative z-20 mt-auto">
             <blockquote className="space-y-2">
               <p className="text-lg">
-                &ldquo;Cas ktory nam Fitka usetrila je neskutocny. Ani si nevies
-                predstavit Hitler ako ta milujem.&rdquo;
+                &ldquo;Cas ktory nam Fitka usetrila je neskutocny. &ldquo;
               </p>
-              <footer className="text-sm">Jozef Tiso</footer>
+              <footer className="text-sm">Kajo</footer>
             </blockquote>
           </div>
         </div>
