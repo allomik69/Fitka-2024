@@ -18,7 +18,7 @@ export const metadata: Metadata = {
         <h1 className="mt-8 text-5xl  font-semibold">Onboarding</h1>
         <h5 className="mt-1 text-base text-zinc-400 font-light">Prosím vyplnte potrebné údaje</h5>
         <h2 className="mt-5 mb-1">Meno</h2>
-       <Input placeholder="Meno vašho fitness centra"/> 
+       <Input className="w-[20rem] h-10" placeholder="Meno vašho fitness centra"/> 
         <h5 className="mt-1  text-base text-slate-500">Zadajte meno Vášho fitness centra</h5>
           <Button variant={"onboarding"}>
           Pokračovať 
