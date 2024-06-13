@@ -1,3 +1,4 @@
+// app/dashboard/page.js or wherever your main Dashboard component is located
 import { Metadata } from "next";
 import coins from "../../../public/grommet-icons_money.svg"; 
 import people from "../../../public/people.svg"; 
@@ -7,14 +8,18 @@ import userIcon from "../../../public/profile-pic.png";
 import { Button } from "@/components/ui/button";
 import { Input}  from "@/components/ui/input";
 import { DatePickerWithRange } from "@/components/ui/date-range";
+import dynamic from 'next/dynamic';
+
+// Dynamically import the LineChart component with no SSR (Server Side Rendering)
+const LineChart = dynamic(() => import('@/components/line-chart/chart'), { ssr: false });
 
 export const metadata: Metadata = {
     title: "Dashboard",
     description: "Welcome to dashboard.",
   };
 
-  export default function Dashboard() {
-    return (
+export default function Dashboard() {
+  return (
     <main className="mt-10 ml-10">
         <div className="flex flex-row justify">
             <h1 className=" text-3xl  font-semibold">Hlavný panel</h1>
@@ -23,6 +28,7 @@ export const metadata: Metadata = {
                 <Button className="bg-white hover:bg-slate-200 ml-2">Download</Button>
             </div>
         </div>
+        <div className="pl-[6%]">
         <section className="mt-20 flex-row flex gap-x-10">
         <div className="w-[30rem] h-[12rem] bg-black bg-opacity-30 rounded-[10px] border-white border-opacity-25 border pl-8 pt-5 pr-8 pb-5">
             <h3 className="text-2xl font-semibold">Tržby</h3>
@@ -78,7 +84,7 @@ export const metadata: Metadata = {
                     <h3 className="ml-52 mt-2">+€35.00</h3>
                 </div>
             </div>
-            <div className="flex flex-start mt-2 mb-4">
+            <div className="flex flex-start mt-2 mb-4 relative">
                 <Image
                 className=""
                 src={userIcon}
@@ -94,11 +100,11 @@ export const metadata: Metadata = {
                     <h3 className="ml-52 mt-2">+€35.00</h3>
                 </div>
             </div>
-            
+             <div className="absolute  left-[47%] bottom-[13%] w-[35%] h-[20rem] bg-black bg-opacity-60 rounded-[10px] border-white border-opacity-25 border" id="myChart">
+                    <LineChart />
+                </div>
+        </div>
         </div>
     </main>
-    );
-  }
-  
-      
-  
+  );
+}
